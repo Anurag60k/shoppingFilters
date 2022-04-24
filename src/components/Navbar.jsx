@@ -1,9 +1,10 @@
 import { AppBar, Box, Button, Toolbar, Typography } from '@mui/material';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Home from './Home';
 
 
-const Navbar = ()=>{
+const Navbar = ({home})=>{
 
     return(
         <>
@@ -12,9 +13,9 @@ const Navbar = ()=>{
                     <Typography color='black'>BrainyDX</Typography>
 
                     <Box>
-                        <Button component={Link} to="/ ">
+                        {/* <Button onClick={home.category}>
                             All
-                        </Button>
+                        </Button> */}
                         <Button component={Link} to="/jwelery ">
                             Jwelary
                         </Button>

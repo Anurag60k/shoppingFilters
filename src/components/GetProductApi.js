@@ -12,11 +12,12 @@ const GetProductApi = (productApi)=>{
         })
     },[])
 
-    return(
-        <>
-        </>
-
-    )
+    const FetchProduct = product.map(()=>{
+        return (product)
+    })
+    return FetchProduct;
+    // console.log(FetchProduct)
 }
+console.log(GetProductApi)
 
 export default GetProductApi;

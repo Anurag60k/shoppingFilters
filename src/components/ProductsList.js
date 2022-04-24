@@ -5,22 +5,22 @@ import {Card, CardContent, Typography, Box} from '@mui/material';
 const ProductsList = ({product})=>{
     
     return(
-        <Box >
+        <Box>
 
-            `<Card >
-                <CardContent  alignItems='center' justifyContent="center">
-                    <Box >
-                        <img src={product.image} height={100}
-                        width={100}/>
+            <Card>
+                <CardContent>
+                    <Box>
+                        <img src={product.image} height='100rem'
+                        width='100rem'/>
                     </Box>
-                    <Typography mt={2}>
+                    <Typography mt='1rem'  fontWeight={600}  mb='3rem'   >
                         {product.title}
                     </Typography>
-                    <Box mt={2}>
+                    <Box>
                         <Typography >
                             <b>{`$ ${product.price}`}</b>
                         </Typography>
-                        <Typography mt={2}>
+                        <Typography >
                             {product.category}
                         </Typography>
                     </Box>

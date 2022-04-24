@@ -3,9 +3,10 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import ProductsList from './ProductsList';
 import { Link } from 'react-router-dom';
+import ProductListTwo from './PrductListTwo';
 
 
-const Home = ()=>{
+const Home = (home)=>{
     const [product , setProduct]= useState([]);
     
 
@@ -27,32 +28,28 @@ const Home = ()=>{
 
     
 
-    const filter = ((product)=>{
-        const filterProducts = product.filter(()=>{
-            if(product.category == 'jewelery'){
-                return product
-            }
-            else
-                return 0;
+    // const filter = ((category)=>{
+    //     const filterProducts = product.filter((curProd)=>{
+    //         return curProd.category === category;          
             
-        })
-
-    })
+    //     })
+    //     setProduct (filterProducts)
+    // })
    
     return(
         <>
             
             
-            <Grid container spacing={2} > 
+            <Grid container spacing={2} sx={{ paddingRight:2, marginRight:1}} > 
                 {
                     product.map((product)=>{
                         return(
                             
                                 <Grid item xs={12} sm={6} md={3}  lg={3} xl={2} 
-                                    key={product.id} height={400} width={400} 
+                                    key={product.id}  sx={{marginBottom:2}}
                                         >
 
-                                    <ProductsList product={product} />
+                                    <ProductListTwo product={product}  />
                                 </Grid>
                                
                             

@@ -18,7 +18,7 @@ const FilterWomenClothing =(jwelFilter)=>{
     
 
     const womensCloth = product.filter((product)=>{
-        if(product.category === `women's clothing`){
+        if(product.category === product){
             return {womensCloth}            
         }
         else return 0;

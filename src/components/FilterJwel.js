@@ -24,8 +24,8 @@ const FilterJwel =()=>{
            
             else return 0;
     })
-    console.log(product)
-    console.log(jewelery)
+    // console.log(product)
+    // console.log(jewelery)
 
     // console.log()
     return(

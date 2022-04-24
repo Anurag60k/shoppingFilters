@@ -8,6 +8,7 @@ import FilterJwel from './components/FilterJwel';
 import FilterClothing from './components/FilterClothing';
 import FilterWomenClothing from './components/FilterWomenClothing';
 import FilterElectronic from './components/FilterElectronics';
+import GetProductApi from './components/GetProductApi';
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
             <Route path="/clothing" element={<FilterClothing />} />
             <Route path="/womensClothing" element={<FilterWomenClothing />} />
             <Route path="/electronics" element={<FilterElectronic/>} />
+            <Route path="/api" element={<GetProductApi/>} />
+            
 
             
           </Routes>
